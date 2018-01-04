@@ -12122,7 +12122,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta:</strong></p>
-<p>Acredito que a minha amostra 1 representa um açougue, a amostra 2 um mercado pequeno e a terceira uma distribuidora de doces.</p>
+<p>Acredito que a minha amostra 1 representa uma quitanda ou algo do gênero, pois tem um volume muito acima da média em Fresh, enquanto nos outros casos fica abaixo ou dentro da média. Outro fator que me levou a acreditar nisto é que o volume deste cliente coloca ele entre os 25% que mais consomem Fresh.</p>
+<p>Acredito que a amostra 2 representa um restaurante pois fica abaixo da média em todos os casos e tem uma queda em Detergents_Paper.</p>
+<p>Acredito que a amostra 3 representa uma padaria ou um café, pois o volume de Milk e Grocerys estão muito acima da média, ficando entre os 25% que mais consomem estes dois produtos, enquanto os demais ficam abaixo da média.</p>
 
 </div>
 </div>
@@ -12379,6 +12381,7 @@ Score:  -0.295252843611
 <p><strong>Resposta:</strong></p>
 <p>Eu fiz a previsão para todos os atributos e a variação foi muito diferente de um para outro, por isso rodei um loop para fazer a verificação para todos os atributos. O atributo com o melhor score foi Grocery. Outra coisa que me chamou atenção é que a correlação de Detergents_Paper com Grocery é de 0.85 aproximadamente.</p>
 <p>Com esses dados acredito que não podemos dizer que existe uma correlação forte entre todos os produtos. Porém a correlação de Detergents_Paper com Grocery existe e tem um valor considerável.</p>
+<p>Detergents_Paper e Grocery podem ser importante para prever os hábitos de consumo, pois Detergents_Paper explica 86% de Grocery que por sua vez explica 87% de Detergents_Paper.</p>
 
 </div>
 </div>
@@ -12445,6 +12448,7 @@ Score:  -0.295252843611
 <p><strong>Resposta:</strong></p>
 <p>Sim, confirmou minha desconfiança com relação a correlação de Detergents_Paper com Grocery. Também me chamou a atenção de Milk com Groceries.
 Neste dos casos os dados estão distribuído de forma que parece formar uma reta e por isso se saíram bem na regressão.</p>
+<p>Todos os produtos mostram uma distribuição positiva e não normal.</p>
 
 </div>
 </div>
@@ -13544,10 +13548,10 @@ Neste dos casos os dados estão distribuído de forma que parece formar uma reta
 <p>Terceiro componente: 12,31%</p>
 <p>Quarto componente: 10,12%</p>
 <p>Total dos quatro primeiros: 93,11%</p>
-<p>O primeiro PCA tem uma correlação mais forte em Detergents_Paper, Grocery e Milk.</p>
-<p>O primeiro PCA tem uma correlação mais forte em Fresh, Frozen e Delicatessen.</p>
-<p>O terceiro PCA tem uma correlação inversa em Delicatessen e Fresh.</p>
-<p>O quarto PCA tem uma correlação inversa em Delicatessen e Frozen.</p>
+<p>A primeira dimensão tem uma correlação mais forte em Detergents_Paper, Grocery e Milk. Isto mostra que estes 3 fatores podem andar juntos. Esta dimensão explica 44,30% da variação dos dados.</p>
+<p>A segunda dimensão tem uma correlação mais forte em Fresh, Frozen e Delicatessen. Sendo Fresh a mais forte com uma correlação de cerca de 0,65.</p>
+<p>A terceira dimensão tem uma correlação inversa em Delicatessen e Fresh. Isto mostra que se trata de um seguimento onde uma venda maior em Delicatessen resulta em uma venda menor de Fresh e vice e versa.</p>
+<p>A quarta dimensão tem uma correlação inversa em Delicatessen e Frozen. O que, como na terceira dimensão, uma mostra que as vendas positivas de um resulta negativamente nas vendas do outro.</p>
 
 </div>
 </div>
